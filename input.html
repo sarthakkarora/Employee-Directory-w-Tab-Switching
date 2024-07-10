@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Echidna Employee Directory</h2>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search by name or email...">
+        <select id="sortSelect">
+            <option value="name">Sort by Name</option>
+            <option value="email">Sort by Email</option>
+            <option value="position">Sort by Position</option>
+        </select>
+    </div>
+
+    <ul id="tabs" class="tabs" role="tablist">
+        <li class="tab" data-tab="1" role="tab" aria-controls="tab-content-1">Tab 1</li>
+        <li class="tab" data-tab="2" role="tab" aria-controls="tab-content-2">Tab 2</li>
+        <li class="tab" data-tab="3" role="tab" aria-controls="tab-content-3">Tab 3</li>
+        <li class="tab" data-tab="4" role="tab" aria-controls="tab-content-4">Tab 4</li>
+    </ul>
+
+    <div id="tab-content" class="tab-content">
+        <div class="tab-pane" id="tab-content-1" data-tab="1"></div>
+        <div class="tab-pane" id="tab-content-2" data-tab="2"></div>
+        <div class="tab-pane" id="tab-content-3" data-tab="3"></div>
+        <div class="tab-pane" id="tab-content-4" data-tab="4"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
